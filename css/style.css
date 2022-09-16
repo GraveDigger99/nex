@@ -784,6 +784,13 @@ textarea.input {
           column-gap: 13px;
 }
 
+@media (min-width: 29.99875em) {
+  .select__options {
+    padding-top: 0;
+    padding-left: 3px;
+  }
+}
+
 @media (min-width: 117.5619375em) {
   .exchange {
     margin-bottom: inherit;
@@ -858,13 +865,6 @@ textarea.input {
 @media (max-width: 36.875em) {
   .header-form-exchange__rate {
     font-size: 1.25rem;
-  }
-}
-
-@media (max-width: 29.99875em) {
-  .select__options {
-    padding-top: 0;
-    padding-left: 3px;
   }
 }
 
