@@ -410,6 +410,18 @@ textarea.input {
           justify-content: center;
 }
 
+@supports (padding-top: clamp( 2rem , -10.009009009rem  +  19.3693693694vw , 12.75rem )) {
+  .exchange {
+    padding-top: clamp( 2rem , -10.009009009rem  +  19.3693693694vw , 12.75rem );
+  }
+}
+
+@supports not (padding-top: clamp( 2rem , -10.009009009rem  +  19.3693693694vw , 12.75rem )) {
+  .exchange {
+    padding-top: calc(2rem + 10.75 * (100vw - 62rem) / 55.5);
+  }
+}
+
 @supports (margin-bottom: clamp( 2rem , 1.9964095573rem  +  5.7447083523vw , 8.75rem )) {
   .exchange {
     margin-bottom: clamp( 2rem , 1.9964095573rem  +  5.7447083523vw , 8.75rem );
@@ -516,9 +528,6 @@ textarea.input {
 }
 
 .form-exchange__column {
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -769,6 +778,18 @@ textarea.input {
   overflow: visible;
 }
 
+@supports (padding-bottom: clamp( 2rem , -5.5405405405rem  +  12.1621621622vw , 8.75rem )) {
+  .partners {
+    padding-bottom: clamp( 2rem , -5.5405405405rem  +  12.1621621622vw , 8.75rem );
+  }
+}
+
+@supports not (padding-bottom: clamp( 2rem , -5.5405405405rem  +  12.1621621622vw , 8.75rem )) {
+  .partners {
+    padding-bottom: calc(2rem + 6.75 * (100vw - 62rem) / 55.5);
+  }
+}
+
 .partners__inner {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -791,9 +812,35 @@ textarea.input {
   }
 }
 
+@media (min-width: 61.99875em) {
+  .form-exchange__column {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 0 420px;
+            flex: 1 0 420px;
+  }
+}
+
 @media (min-width: 117.5619375em) {
   .exchange {
     margin-bottom: inherit;
+  }
+}
+
+@media (max-width: 78.125em) {
+  .form-exchange__column {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 0 100%;
+            flex: 1 0 100%;
+  }
+
+  .form-exchange__item {
+    margin: 15px 0;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    text-align: center;
   }
 }
 
@@ -805,17 +852,6 @@ textarea.input {
     max-width: 115px;
     overflow: hidden;
     min-width: 40px;
-  }
-
-  .form-exchange {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: stretch;
-        -ms-flex-align: stretch;
-            align-items: stretch;
-    row-gap: 15px;
   }
 
   .form-exchange__button {

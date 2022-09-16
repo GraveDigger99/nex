@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20220917021731">
+	<link rel="stylesheet" href="css/style.min.css?_v=20220917034132">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
@@ -33,7 +33,7 @@
 									<div class="form-exchange__give give-form-exchange">
 										<label class="give-form-exchange__label" for="give-input">I GIVE</label>
 										<div class="give-form-exchange__info">
-											<input id="give-input" autocomplete="off" type="number" name="form[]" data-error="Ошибка" placeholder="100000" class="give-form-exchange__input input">
+											<input id="give-input" autocomplete="off" type="number" step="" name="form[]" data-error="Ошибка" placeholder="10.0000" class="give-form-exchange__input input">
 											<select class="form" name="form[]">
 												<option data-asset=img/card.svg" data-class="form__card" value="1" selected><span class="test">Visa/Mastercard(UAH)</span></option>
 												<option data-asset=img/btc.svg" data-class="form__btc" value="2">BTC</option>
@@ -46,9 +46,11 @@
 									</div>
 									<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Enter card number" class="input">
 								</div>
-								<button type="submit" class="form-exchange__button">
+								<div class="form-exchange__item">
+									<button type="submit" class="form-exchange__button">
 
-								</button>
+									</button>
+								</div>
 								<div class="form-exchange__column">
 									<div class="form-exchange__give give-form-exchange">
 										<label class="give-form-exchange__label" for="get-input">GETTING</label>
@@ -112,7 +114,7 @@
 </div>
  -->
 
-	<script src="js/app.min.js?_v=20220917021731"></script>
+	<script src="js/app.min.js?_v=20220917034132"></script>
 </body>
 
 </html>
