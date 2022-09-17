@@ -422,18 +422,6 @@ textarea.input {
   }
 }
 
-@supports (margin-bottom: clamp( 2rem , 1.9964095573rem  +  5.7447083523vw , 8.75rem )) {
-  .exchange {
-    margin-bottom: clamp( 2rem , 1.9964095573rem  +  5.7447083523vw , 8.75rem );
-  }
-}
-
-@supports not (margin-bottom: clamp( 2rem , 1.9964095573rem  +  5.7447083523vw , 8.75rem )) {
-  .exchange {
-    margin-bottom: calc(2rem + 6.75 * (100vw - 0.0625rem) / 117.4994375);
-  }
-}
-
 .page {
   background-color: #111319;
 }
@@ -778,6 +766,18 @@ textarea.input {
   overflow: visible;
 }
 
+@supports (padding-top: clamp( 2rem , -5.5405405405rem  +  12.1621621622vw , 8.75rem )) {
+  .partners {
+    padding-top: clamp( 2rem , -5.5405405405rem  +  12.1621621622vw , 8.75rem );
+  }
+}
+
+@supports not (padding-top: clamp( 2rem , -5.5405405405rem  +  12.1621621622vw , 8.75rem )) {
+  .partners {
+    padding-top: calc(2rem + 6.75 * (100vw - 62rem) / 55.5);
+  }
+}
+
 @supports (padding-bottom: clamp( 2rem , -5.5405405405rem  +  12.1621621622vw , 8.75rem )) {
   .partners {
     padding-bottom: clamp( 2rem , -5.5405405405rem  +  12.1621621622vw , 8.75rem );
@@ -817,12 +817,6 @@ textarea.input {
     -webkit-box-flex: 1;
         -ms-flex: 1 0 420px;
             flex: 1 0 420px;
-  }
-}
-
-@media (min-width: 117.5619375em) {
-  .exchange {
-    margin-bottom: inherit;
   }
 }
 
@@ -914,12 +908,6 @@ textarea.input {
   .title {
     max-width: 242px;
     margin: 0 auto;
-  }
-}
-
-@media (max-width: 0.0625em) {
-  .exchange {
-    margin-bottom: inherit;
   }
 }
 
