@@ -1,108 +1,184 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html>
 
 <head>
-	<title>Главная</title>
 	<meta charset="UTF-8">
-	<meta name="format-detection" content="telephone=no">
-	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20220917040427">
-	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Верстка «nex»</title>
 </head>
 
 <body>
-	<div class="wrapper">
-		<header class="header">
-			<div class="header__container">
-			</div>
-		</header>
-		<main class="page">
-			<div class="content">
-				<div class="exchange">
-					<div class="exchange__container">
-						<h1 class="exchange__title title">Crypto. Crypto from here</h1>
-						<h3 class="exchange__subtitle subtitle">Buying and selling cryptocurrencies</h3>
-						<div class="exchange__content">
-							<form action="#" class="exchange__form-exchange  form-exchange">
-								<div class="form-exchange__header header-form-exchange">
-									<span class="header-form-exchange__rate">1 BTC ≈ 22 864,55 USD</span>
-									<span class="header-form-exchange__number">30</span>
-								</div>
-								<div class="form-exchange__column">
-									<div class="form-exchange__give give-form-exchange">
-										<label class="give-form-exchange__label" for="give-input">I GIVE</label>
-										<div class="give-form-exchange__info">
-											<input id="give-input" autocomplete="off" type="number" step="" name="form[]" data-error="Ошибка" placeholder="10.0000" class="give-form-exchange__input input">
-											<select class="form" name="form[]">
-												<option data-asset=img/card.svg" data-class="form__card" value="1" selected><span class="test">Visa/Mastercard(UAH)</span></option>
-												<option data-asset=img/btc.svg" data-class="form__btc" value="2">BTC</option>
-											</select>
-										</div>
-										<div class="give-form-exchange__amount  amount">
-											<span class="amount__min">Мин. сумма <span>3690</span> UAH</span>
-											<span class="amount__max">Макс. сумма <span>29900</span> UAH</span>
-										</div>
-									</div>
-									<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Enter card number" class="input">
-								</div>
-								<div class="form-exchange__item">
-									<button type="submit" class="form-exchange__button">
-
-									</button>
-								</div>
-								<div class="form-exchange__column">
-									<div class="form-exchange__give give-form-exchange">
-										<label class="give-form-exchange__label" for="get-input">GETTING</label>
-										<div class="give-form-exchange__info give-form-exchange__info_space">
-											<input id="get-input" autocomplete="off" type="number" name="form[]" data-error="Ошибка" placeholder="0,04240202" class="give-form-exchange__input input">
-											<select class="form" name="form[]">
-												<option data-asset=img/btc.svg" data-class="form__btc" value="1" selected>BTC</option>
-												<option data-asset=img/card.svg" data-class="form__card" value="2">Visa/Mastercard(UAH)</option>
-											</select>
-										</div>
-									</div>
-									<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Crypto wallet address" class="input">
-								</div>
-							</form>
-							<div class="exchange__info">
-								<ul class="exchange__list">
-									<li class="exchange__item">
-										Included:
-									</li>
-									<li class="exchange__item">
-										Included: Service fee 29.12 USD
-									</li>
-									<li class="exchange__item">
-										Blockchain network fee 1.32 USD
-									</li>
-								</ul>
-							</div>
-							<div class="exchange__button">
-								<a href="#" class="button">
-									Exchange
-								</a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="partners">
-				<div class="partners__container">
-					<div class="partners__inner">
-						<img src="img/mastercard.svg" alt="image">
-						<img src="img/logo.svg" alt="logo">
-						<img src="img/visa-logo.svg" alt="image">
-					</div>
-				</div>
-			</div>
-		</main>
-		<footer class="footer">
-			<div class="footer__container">
-			</div>
-		</footer>
+	<div class="rootpage">
+		<h1>Верстка «nex»</h1>
+		<h2>Страницы:</h2>
+		<ol class="rootpage__list">
+			<li><a target="_blank" href="home.html">Main</a></li>
+			<li><a target="_blank" href="data-confirmation.html">Data-confirmation</a></li>
+			<li><a target="_blank" href="request-details.html">Request-details</a></li>
+			<li><a target="_blank" href="request-details-approve.html">Request-details-approve</a></li>
+			<li><a target="_blank" href="reviews.html">Reviews</a></li>
+			<li><a target="_blank" href="operations.html">Personal Area-1</a></li>
+			<li><a target="_blank" href="security.html">Personal Area-2</a></li>
+			<li><a target="_blank" href="analytics.html">Personal Area-3</a></li>
+			<li><a target="_blank" href="promotion.html">Promotion</a></li>
+			<li><a target="_blank" href="contacts.html">Contacts</a></li>
+			<li><a target="_blank" href="FAQs.html">FAQs</a></li>
+			<li><a target="_blank" href="privacy-notice.html">Privacy Notice</a></li>
+			<li><a target="_blank" href="aml-policy.html">aml-policy</a></li>
+			<li><a target="_blank" href="blog.html">Blog</a></li>
+			<li><a target="_blank" href="blog-1.html">Blog-1</a></li>
+			<li><a target="_blank" href="bonus.html">Bonus</a></li>
+		</ol>
+		<h2>Попапы:</h2>
+		<ol class="rootpage__list">
+			<li><a target="_blank" href="home.html#popup-login">login</a></li>
+			<li><a target="_blank" href="home.html#popup-registration">Registration</a></li>
+			<li><a target="_blank" href="home.html#popup-change-password">Change password</a></li>
+			<li><a target="_blank" href="home.html#popup-reset-password-email">Email</a></li>
+			<li><a target="_blank" href="home.html#popup-reset-password-email-code">Email Code</a></li>
+		</ol>
 	</div>
-	<script src="js/app.min.js?_v=20220917040427"></script>
 </body>
+<style>
+	@charset "UTF-8";
+	@import url("https://fonts.googleapis.com/css?family=Montserrat:regular,700&display=swap");
+
+	*,
+	*::before,
+	*::after {
+		padding: 0px;
+		margin: 0px;
+		border: 0px;
+		box-sizing: border-box;
+	}
+
+	html,
+	body {
+		height: 100%;
+		margin: 0;
+		padding: 0;
+		min-width: 320px;
+		width: 100%;
+		color: #fff;
+		background-color: #5e5373;
+	}
+
+	body {
+		font-family: Montserrat;
+		font-size: 100%;
+		line-height: 1;
+		font-size: 1rem;
+	}
+
+	a {
+		text-decoration: underline;
+		color: #ebe691
+	}
+
+	a:visited {
+		text-decoration: underline;
+		color: #aaa768;
+	}
+
+	a:hover {
+		text-decoration: none;
+	}
+
+	ul li {
+		list-style: none;
+	}
+
+	img {
+		vertical-align: top;
+	}
+
+	.wrapper {
+		width: 100%;
+		min-height: 100%;
+		overflow: hidden;
+	}
+
+	.rootpage {
+		padding: 30px;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	@media (max-width: 767px) {
+		.rootpage {
+			padding: 30px 15px;
+		}
+	}
+
+	h1 {
+		color: #ebe691;
+		font-size: 2.5rem;
+		margin: 0px 0px 1.25rem 0px;
+	}
+
+	@media (max-width: 767px) {
+		h1 {
+			font-size: 1.85rem;
+			margin: 0px 0px 1.25rem 0px;
+		}
+	}
+
+	h2 {
+		color: #ebe691;
+		font-size: 1.25rem;
+		margin: 0px 0px 1rem 0px;
+	}
+
+	@media (max-width: 767px) {
+		h2 {
+			font-size: 1.125rem;
+			margin: 0px 0px 1rem 0px;
+		}
+	}
+
+	.rootpage__info {
+		line-height: 140%;
+		margin: 0px 0px 1.5rem 0px;
+	}
+
+	.rootpage__list {
+		margin: 0px 0px 2.25rem 1.25rem;
+	}
+
+	.rootpage__list li:not(:last-child) {
+		margin: 0px 0px 15px 0px;
+	}
+
+	.rootpage__contacts,
+	.rootpage__tnx {
+		border-radius: 200px;
+		padding: 20px 65px;
+		line-height: 140%;
+	}
+
+	@media (max-width: 767px) {
+
+		.rootpage__contacts,
+		.rootpage__tnx {
+			border-radius: 40px;
+			padding: 20px;
+		}
+	}
+
+	.rootpage__contacts {
+		background: #32b5a4;
+
+	}
+
+	.rootpage__contacts a {
+		color: #ebe691;
+	}
+
+	.rootpage__tnx {
+		background: #c22d63;
+		margin: 0px 0px 1rem 0px;
+	}
+</style>
 
 </html>

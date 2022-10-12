@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title>Главная</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20221012123805">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header data-scroll-show data-scroll="120" class="header">
+			<div class="header__container">
+				<a href="#" class="logo">
+					<img class="logo__main" src="img/header/logo.svg" alt="logo">
+					<img class="logo__text" src="img/header/icons/NEX.svg" alt="logo">
+					<img class="logo__light" src="img/logo_light.svg" alt="logo">
+				</a>
+				<div class="header__menu menu">
+					<nav class="menu__body">
+						<ul class="menu__list">
+							<li class="menu__item menu__item_home"><a href="home.html" class="menu__link">Главная</a></li>
+							<li class="menu__item menu__item_blog"><a href="blog.html" class="menu__link">Блог</a></li>
+							<li class="menu__item menu__item_bonuses"><a href="bonus.html" class="menu__link">Бонусы</a></li>
+							<li class="menu__item menu__item_promotion"><a href="promotion.html" class="menu__link">Акции</a></li>
+							<li class="menu__item menu__item_contacts"><a href="contacts.html" class="menu__link">Контакты</a></li>
+							<li class="menu__item menu__item_reviews"><a href="reviews.html" class="menu__link">Отзывы</a></li>
+						</ul>
+					</nav>
+				</div>
+				<div class="header__items">
+					<div class="header__buttons">
+						<button type="button" class="sign-in">
+							<img class="sign-in__icon sign-in__icon-dark" src="img/header/icons/Profile.svg" alt="icon">
+							<img class="sign-in__icon sign-in__icon-light" src="img/user-light.svg" alt="icon">
+							<a data-popup="#popup-login" href="#" class="sign-in__text">войти</a>
+							<div class="sign-in__body body-sign-in">
+								<a href="#" class="user">
+									<picture><source srcset="img/header/icons/user-big.webp" type="image/webp"><img src="img/header/icons/user-big.png" alt="image"></picture>
+									<span class="user__text">User#123</span>
+								</a>
+								<ul class="body-sign-in__list">
+									<li class="body-sign-in__item body-sign-in__item_history">
+										<a href="operations.html" class="body-sign-in__link">История операций</a>
+									</li>
+									<li class="body-sign-in__item body-sign-in__item_securty">
+										<a href="security.html" class="body-sign-in__link">Безопасность</a>
+									</li>
+									<li class="body-sign-in__item body-sign-in__item_analytics">
+										<a href="#" class="body-sign-in__link">Аналитика</a>
+									</li>
+								</ul>
+								<a href="#" class="log-out">
+									Выйти из аккаунта
+								</a>
+							</div>
+						</button>
+						<a data-popup="#popup-registration" href="#" class="header__button button button_size button_style">Регистрация</a>
+					</div>
+					<button type="button" class="menu__icon icon-menu"><span></span></button>
+					<div data-da=".menu__body,985,last" class="cta">
+						<a href="#" class="cta__language language">
+							<form class="language__form form-language" action="#">
+								<select name="form[]" class="sel-language">
+									<option data-asset="img/header/icons/world.svg" value="1"><span class="language__text">Язык</span></option>
+									<option value="2">UA</option>
+									<option value="3">RU</option>
+									<option value="4">ENG</option>
+								</select>
+							</form>
+						</a>
+						<a href="#" class="cta__dark-mode dark-mode">
+							<img class="dark-mode__icon" src="img/header/icons/moon.svg" alt="icon">
+							<span class="dark-mode__text">Dark mode</span>
+							<form action="#" class="dark-mode__form form-dark-mode">
+								<div class="switcher">
+									<input id="switcher" autocomplete="off" type="checkbox" name="form[]" data-error="Ошибка" placeholder="" class="switcher__input">
+									<label class="switcher__label" for="switcher"></label>
+								</div>
+							</form>
+						</a>
+					</div>
+				</div>
+			</div>
+		</header>
+		<main class="page page_light">
+			<section class="faq">
+				<div class="fap__container">
+					<h1 class="faq__title title title_dark">Привет! Как мы можем помочь?</h1>
+					<h3 class="faq__topic topic">Найдите ответ в частозадаваемых вопросах или воспользуйтесь поиском</h3>
+					<div data-spollers class="spollers">
+						<div class="spollers__item">
+							<button type="button" data-spoller class="spollers__title">Как совершить обмен</button>
+							<div class="spollers__body">Nibh quisque suscipit fermentum netus nulla cras porttitor euismod
+								nulla.
+								Orci, dictumst nec aliquet id ullamcorper
+								venenatis.</div>
+						</div>
+						<div class="spollers__item">
+							<button type="button" data-spoller class="spollers__title">Зачем нужна верификация</button>
+							<div class="spollers__body">Верификация – это мера предосторожности, к которой любой сервис должен
+								подходить ответственно. Прохождение Вами
+								верификации – это гарантия для нас, что Вы – владелец пластиковой или виртуальной карты, имеете
+								доступ к
+								интернет-банкингу, и именно Вы совершаете обмен. Для Вас же это дополнительная защита от
+								мошеннических действий с
+								данными Вашей карты.
+								Процесс верификации быстрый и не сложный. Подробно с правилами верификации и требованиям к
+								фотографии Вы можете
+								ознакомиться в разделе Верификация счетов в шапке сайта.</div>
+						</div>
+						<div class="spollers__item">
+							<button type="button" data-spoller class="spollers__title">Where can I watch?</button>
+							<div class="spollers__body">Контент спойлера</div>
+						</div>
+						<div class="spollers__item">
+							<button type="button" data-spoller class="spollers__title">Where can I watch?</button>
+							<div class="spollers__body">Контент спойлера</div>
+						</div>
+						<div class="spollers__item">
+							<button type="button" data-spoller class="spollers__title">Where can I watch?</button>
+							<div class="spollers__body">Контент спойлера</div>
+						</div>
+					</div>
+					<div class="partners">
+						<div class="partners__inner">
+							<img src="img/mastercard.svg" alt="image">
+							<img src="img/logo.svg" alt="logo">
+							<img src="img/visa-logo.svg" alt="image">
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+				<div class="footer__top">
+					<div class="footer__item">
+						<div class="footer__column">
+							<a href="#" class="footer__logo logo">
+								<img class="logo__main logo__main_big" src="img/header/logo.svg" alt="logo">
+								<img class="logo__text logo__text_big" src="img/header/icons/NEX.svg" alt="logo">
+								<img class="logo__light logo__text_big" src="img/logo_light.svg" alt="logo">
+							</a>
+							<p class="description">
+								Мы, команда NEX, стремимся улучшить ваш пользовательский опыт в мире криптовалют, а также повысить
+								уровень
+								понимания
+								криптовалют и внести свой вклад в развитие сообщества. Если вы хотите поделиться с нами своими
+								мыслями,
+								свяжитесь
+								с нами
+								по электронной почте или в социальных сетях.
+							</p>
+						</div>
+						<div class="footer__navigation">
+							<div class="footer__contacts">
+								<h3 class="heading">Контакты</h3>
+								<a href="mailto:support@nex.com" class="mail-link">support@nex.com</a>
+								<div class="social">
+									<a href="#" class="social__link">
+										<img class="social__telegram" src="img/social/telegram.svg" alt="icon:telegram">
+										<img class="social__telegram-light" src="img/social/Telegram/Negative.svg" alt="icon">
+									</a>
+									<a href="#" class="social__link">
+										<img class="social__instagram" src="img/social/instagram.svg" alt="icon:instagram">
+										<img class="social__instagram-light" src="img/social/Instagram/Negative.svg" alt="instagram">
+									</a>
+									<a href="#" class="social__link">
+										<img class="social__twitter" src="img/social/twitter.svg" alt="icon:twitter">
+										<img class="social__twitter-light" src="img/social/Twitter/Negative.svg" alt="icon:twitter">
+									</a>
+								</div>
+							</div>
+							<nav class="footer__links links-footer">
+								<h3 class="heading">Ссылки</h3>
+								<ul class="links-footer__list">
+									<li class="links-footer__item">
+										<a href="contacts.html" class="links-footer__link">Контакты</a>
+									</li>
+									<li class="links-footer__item">
+										<a href="#" class="links-footer__link">Блог</a>
+									</li>
+									<li class="links-footer__item">
+										<a href="FAQs.html" class="links-footer__link">FAQs</a>
+									</li>
+									<li class="links-footer__item">
+										<a href="#" class="links-footer__link">AML / KYC</a>
+									</li>
+									<li class="links-footer__item">
+										<a href="#" class="links-footer__link">Политика конфиденциальности</a>
+									</li>
+								</ul>
+							</nav>
+						</div>
+					</div>
+					<div class="lastest-blog">
+						<h3 class="heading">Последнее обновление блога</h3>
+						<div class="lastest-blog__row">
+							<a href="#" class="lastest-blog__columns">
+								<div class="lastest-blog__item">
+									<div class="lastest-blog__image ">
+										<picture><source srcset="img/footer/01.webp" type="image/webp"><img src="img/footer/01.jpg" alt="image"></picture>
+									</div>
+									<p class="lastest-blog__text">
+										Абсурд или неизбежность. Как санкции <span>Tornado Cash</span> изменили крипторынок
+									</p>
+								</div>
+							</a>
+							<a href="#" class="lastest-blog__columns">
+								<div class="lastest-blog__item">
+									<div class="lastest-blog__image">
+										<picture><source srcset="img/footer/02.webp" type="image/webp"><img src="img/footer/02.jpg" alt="image"></picture>
+									</div>
+									<p class="lastest-blog__text">
+										Тайский <span>SCBX </span>отказался от поглощения криптобиржи Bitkub за $500 млн
+									</p>
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="footer__bottom">
+					<a href="#" class="copyright">Copyright © 2022 NEX</a>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<script src="js/app.min.js?_v=20221012123805"></script>
+	<div id="popup-login" aria-hidden="true" class="popup-login">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<div class="popup-login__header">
+					<h3 class="popup-login__heading heading">Вход в личный кабинет</h3>
+					<button data-close type="button" class="popup__close">
+						<img src="img/X.svg" alt="icon:close">
+					</button>
+				</div>
+				<form action="#" class="popup__form form-popup">
+					<!--  -->
+					<div class="form-popup__login">
+						<label class="form-popup__label label" for="form-popup__input-login">Логин</label>
+						<input id="form-popup__input-login" autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Nex@crypto.com" class="form-popup__input input">
+					</div>
+					<!--  -->
+					<div class="form-popup__password">
+						<label class="form-popup__label label" for="form-security__input-password">Пароль</label>
+						<div class="form-security__inner">
+							<input id="form-security__input-password" autocomplete="off" type="password" name="form[]" data-error="Ошибка" placeholder="Ваш пароль" class="form-security__input security-form__input input">
+							<img class="form-security__icon" src="img/viewpass.svg" alt="icon">
+						</div>
+					</div>
+					<!--  -->
+					<div class="form-popup__link">
+						<a data-popup="#popup-reset-password-email" href="#">Забыли пароль?</a>
+					</div>
+					<!--  -->
+					<a data-popup="#popup-check" href="#" class="form-popup__button button">Войти</a>
+					<!--  -->
+				</form>
+				<div class="popup-login__footer">
+					<span class="popup-login__text">Еще нет аккаунта ?</span>
+					<a data-popup="#popup-registration" href="#" class="popup-login__link">Зарегистрируйтесь</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--  -->
+	<div id="popup-registration" aria-hidden="true" class="popup-registration">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<div class="popup-login__header">
+					<h3 class="popup-login__heading heading">Регистрация аккаунта</h3>
+					<button data-close type="button" class="popup__close">
+						<img src="img/X.svg" alt="icon:close">
+					</button>
+				</div>
+				<form action="#" class="popup__form form-popup">
+					<!--  -->
+					<div class="form-popup__email">
+						<label class="form-popup__label label" for="form-popup__input-email">E-mail</label>
+						<input id="form-popup__input-email" autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Ваш E-mail" class="input">
+					</div>
+					<!--  -->
+					<div class="form-popup__login">
+						<label class="form-popup__label label" for="form-popup__input-login-1">Логин</label>
+						<input id="form-popup__input-login-1" autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Nex@crypto.com" class="form-popup__input input">
+					</div>
+					<!--  -->
+					<div class="form-popup__password">
+						<label class="form-popup__label label" for="form-security__input-password-1">Пароль</label>
+						<div class="form-security__inner">
+							<input id="form-security__input-password-1" autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Ваш пароль" class="form-security__input input">
+							<img class="form-security__icon" src="img/viewpass.svg" alt="icon">
+						</div>
+					</div>
+					<!--  -->
+					<div class="form-popup__password-repeat">
+						<label class="form-popup__label label" for="form-security__input-password-3">Подтвердите пароль</label>
+						<div class="form-security__inner">
+							<input id="form-security__input-password-3" autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Подтвердите ваш пароль" class="form-security__input input">
+							<img class="form-security__icon" src="img/viewpass.svg" alt="icon">
+						</div>
+					</div>
+					<!--  -->
+					<div class="form-popup__check">
+						<input id="form-popup__accept" autocomplete="off" type="checkbox" name="form[]" data-error="Ошибка" placeholder="" class="form-data-cofirmation__checkbox">
+						<label class="form-popup__accept-label" for="form-popup__accept">
+							Регистрируясь на платформе Nex и создавая электронный личный кабинет, Вы соглашаетесь с условиями
+						</label>
+					</div>
+					<!--  -->
+					<a href="#" class="form-popup__button button">Регистрация</a>
+					<!--  -->
+				</form>
+				<div class="popup-login__footer">
+					<span class="popup-login__text">Уже есть аккаунт?</span>
+					<a data-popup="#popup-login" href="#" class="popup-login__link">Авторизоваться</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--  -->
+	<div id="popup-change-password" aria-hidden="true" class="popup-change-password">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<div class="popup-login__header">
+					<h3 class="popup-login__heading heading">Смена пароля</h3>
+					<button data-close type="button" class="popup__close">
+						<img src="img/X.svg" alt="icon:close">
+					</button>
+				</div>
+				<form action="#" class="popup__form form-popup">
+					<!--  -->
+					<div class="form-popup__password">
+						<label class="form-popup__label label" for="form-security__input-password-15">Новый пароль</label>
+						<div class="form-security__inner">
+							<input id="form-security__input-password-15" autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Введите новый пароль" class="form-security__input input">
+							<img class="form-security__icon" src="img/viewpass.svg" alt="icon">
+						</div>
+					</div>
+					<!--  -->
+					<div class="form-popup__password">
+						<label class="form-popup__label label" for="form-security__input-password-17">Подтвердите пароль</label>
+						<div class="form-security__inner">
+							<input id="form-security__input-password-17" autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Подтвердите ваш пароль" class="form-security__input input">
+							<img class="form-security__icon" src="img/viewpass.svg" alt="icon">
+						</div>
+					</div>
+					<!--  -->
+					<a href="#" class="form-popup__button button">Подтвердить</a>
+					<!--  -->
+				</form>
+			</div>
+		</div>
+	</div>
+	<!--  -->
+	<div id="popup-reset-password-email" aria-hidden="true" class="popup-reset-password-email">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<div class="popup-login__header">
+					<h3 class="popup-login__heading heading">Смена пароля</h3>
+					<button data-close type="button" class="popup__close">
+						<img src="img/X.svg" alt="icon:close">
+					</button>
+				</div>
+				<form action="#" class="popup__form form-popup">
+					<!--  -->
+					<div class="form-popup__email">
+						<label class="form-popup__label label" for="form-popup__input-email-10">E-mail</label>
+						<input id="form-popup__input-email-10" autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Ваш E-mail" class="input">
+					</div>
+					<!--  -->
+					<a data-popup="#popup-reset-password-email-code" href="#" class="form-popup__button button">Далее</a>
+					<!--  -->
+				</form>
+				<div class="popup__notification notification-popup">
+					<div class="notification-popup__image">
+						<picture><source srcset="img/warning.webp" type="image/webp"><img src="img/warning.png" alt="image"></picture>
+					</div>
+					<p class="notification-popup__text">
+						После внесения этого изменения вывод средств с реферальной системы будет отключен на 24 ч. в целях защиты вашего
+						аккаунта.
+					</p>
+					<div class="notification-popup__icon">
+						<img src="img/X.svg" alt="icon:close">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--  -->
+	<div id="popup-reset-password-email-code" aria-hidden="true" class="popup-reset-password-email-code">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<div class="popup-login__header">
+					<h3 class="popup-login__heading heading">Смена пароля</h3>
+					<button data-close type="button" class="popup__close">
+						<img src="img/X.svg" alt="icon:close">
+					</button>
+				</div>
+				<form action="#" class="popup__form form-popup">
+					<!--  -->
+					<div class="form-popup__email">
+						<label class="form-popup__label label" for="form-popup__input-email-20">Код верификации (на ел.почту)</label>
+						<div class="form-popup__code-wrapper">
+							<input id="form-popup__input-email-20" autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="" class="form-popup__code-input input">
+							<button class="form-popup__code-link">
+								Получить код
+							</button>
+						</div>
+					</div>
+					<!--  -->
+					<a data-popup="#popup-change-password" href="#" class="form-popup__button button">Далее</a>
+					<!--  -->
+				</form>
+			</div>
+		</div>
+	</div>
+	<!--  -->
+	<!--  -->
+	<div id="popup-check" aria-hidden="true" class="popup-reset-password-email-code">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<div class="popup-login__header popup-login__header_s">
+					<h3 class="popup-login__heading heading">Проверка безопасности</h3>
+					<button data-close type="button" class="popup__close">
+						<img src="img/X.svg" alt="icon:close">
+					</button>
+				</div>
+				<p class="popup-check__text">
+					Чтобы защитить свою учетную запись, выполните следующую проверку.
+				</p>
+				<form action="#" class="popup__form form-popup">
+					<!--  -->
+					<div class="form-popup__email">
+						<label class="form-popup__label label" for="form-popup__input-email-30">Код верификации (на ел.почту)</label>
+						<div class="form-popup__code-wrapper">
+							<input id="form-popup__input-email-30" autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="" class="form-popup__code-input input">
+							<button class="form-popup__code-link">
+								Получить код
+							</button>
+						</div>
+					</div>
+					<!--  -->
+					<a href="#" class="form-popup__button button">Далее</a>
+					<!--  -->
+				</form>
+			</div>
+		</div>
+	</div>
+	<!--  -->
+
+</body>
+
+</html>
