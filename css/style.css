@@ -1382,7 +1382,6 @@ body::after {
   position: relative;
   background-color: #ffffff;
   padding: 0 16px;
-  border-radius: 8px;
 }
 
 .spollers::after {
@@ -5990,7 +5989,7 @@ body::after {
   border-radius: 10px;
   padding-top: 24px;
   padding-bottom: 24px;
-  padding-right: 30px;
+  padding-right: 24px;
   padding-left: 24px;
 }
 
@@ -6207,7 +6206,7 @@ body::after {
   position: absolute;
   z-index: 1;
   top: 0;
-  right: 0;
+  right: 16px;
   height: 100%;
   width: 100%;
   -ms-transform-origin: 0 0;
@@ -6314,7 +6313,7 @@ body::after {
 }
 
 .noUi-connects {
-  border-radius: 3px;
+  border-radius: 10px;
 }
 
 .noUi-connect {
@@ -7709,10 +7708,7 @@ body::after {
   }
 
   .range-bonus {
-    padding-top: 24px;
-    padding-bottom: 24px;
-    padding-left: 16px;
-    padding-right: 30px;
+    padding: 16px;
   }
 
   .income__text {
