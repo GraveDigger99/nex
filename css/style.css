@@ -245,7 +245,7 @@ textarea {
   font-weight: 500;
   line-height: 133%;
   letter-spacing: -0.02em;
-  color: #1E2329;
+  color: #1e2329;
   background-color: #ffffff;
   border-radius: 10px;
   border: 2px solid #ebe9e8;
@@ -266,11 +266,15 @@ textarea {
 .dark-mode .input {
   background-color: #404048;
   border: none;
-  color: #ECECEC;
+  color: #ececec;
 }
 
 .input_weight {
   font-weight: 700;
+}
+
+.input:focus {
+  border: 2px solid #edbb40;
 }
 
 .input_color {
@@ -279,10 +283,6 @@ textarea {
 
 .input_padding {
   padding: 0px 8px;
-}
-
-._form-focus .input {
-  border: 2px solid #edbb40;
 }
 
 ._form-error .input {
@@ -436,23 +436,23 @@ textarea::placeholder {
 }
 
 .dark-mode textarea::-webkit-input-placeholder {
-  color: #92959D;
+  color: #92959d;
 }
 
 .dark-mode textarea::-moz-placeholder {
-  color: #92959D;
+  color: #92959d;
 }
 
 .dark-mode textarea:-ms-input-placeholder {
-  color: #92959D;
+  color: #92959d;
 }
 
 .dark-mode textarea::-ms-input-placeholder {
-  color: #92959D;
+  color: #92959d;
 }
 
 .dark-mode textarea::placeholder {
-  color: #92959D;
+  color: #92959d;
 }
 
 .label {
@@ -700,7 +700,6 @@ textarea::placeholder {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 24px;
           flex: 0 0 24px;
-  background: url("../img/ChevronDown.svg") 0 3px no-repeat;
   -webkit-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
@@ -715,6 +714,14 @@ textarea::placeholder {
           align-items: center;
 }
 
+.dark-mode .select__value:after {
+  background: url("../img/ChevronDown-light-x.svg") center no-repeat !important;
+}
+
+.select_form-1 .select__value:after {
+  background: url("../img/ChevronDown.svg") 0 3px no-repeat !important;
+}
+
 ._select-open .select__value:after {
   -webkit-transform: rotate(-180deg);
       -ms-transform: rotate(-180deg);
@@ -722,18 +729,15 @@ textarea::placeholder {
 }
 
 .select_sel-security .select__value:after {
-  background: url("../img/ChevronDown-black.svg") 0 0 no-repeat;
+  background: url("../img/ChevronDown-black.svg") 0 3px no-repeat;
 }
-
-.no-webp .dark-mode .select_sel-security .select__value:after{
-  background: url("../img/ChevronDown-light.png") center no-repeat !important; }
 
 .select_sel-confirmation .select__value:after {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 10px;
           flex: 0 0 10px;
   padding-right: 8px;
-  background: url("../img/sel-conf.svg") center no-repeat;
+  background: url("../img/sel-conf.svg") center no-repeat !important;
 }
 
 .select_sel-language .select__value::after {
@@ -787,7 +791,7 @@ textarea::placeholder {
 
 .dark-mode .select__options {
   background-color: #404048;
-  border: none;
+  border: none !important;
 }
 
 .select_sel-security .select__options {
@@ -3664,6 +3668,10 @@ body::after {
   transition: all 0.3s ease 0s;
 }
 
+.item-lastest-operations.is-visible {
+  display: block !important;
+}
+
 .item-lastest-operations {
   background-color: #ffffff;
   border-radius: 10px;
@@ -3671,22 +3679,16 @@ body::after {
   position: relative;
 }
 
+.item-lastest-operations:nth-child(n+3) {
+  display: none;
+}
+
+.item-lastest-operations:not(:first-child) {
+  margin-top: 20px;
+}
+
 .dark-mode .item-lastest-operations {
   background-color: #29292e;
-}
-
-.item-lastest-operations:not(:last-child)::after {
-  content: "";
-  background-color: #f0f0f0;
-  width: 100%;
-  height: 32px;
-  position: absolute;
-  left: 0;
-  bottom: 0;
-}
-
-.dark-mode .item-lastest-operations:not(:last-child)::after {
-  background-color: #111319;
 }
 
 .item-lastest-operations__top {
@@ -3771,10 +3773,6 @@ body::after {
   background: url("../img/approve.svg") 0 0 no-repeat;
   width: 20px;
   height: 20px;
-}
-
-.item-lastest-operations__info {
-  margin-bottom: 32px;
 }
 
 .item-lastest-operations__column {
@@ -5081,6 +5079,10 @@ body::after {
   padding-right: 40px;
 }
 
+.dark-mode .form-search-blog__input_color {
+  background-color: #29292e !important;
+}
+
 .form-search-blog__delete {
   display: none;
   position: absolute;
@@ -5153,8 +5155,8 @@ body::after {
 }
 
 .dark-mode .blog__more {
-  border: 1px solid #324C43;
-  color: #ECECEC;
+  border: 1px solid #324c43;
+  color: #ececec;
 }
 
 .blog__more span {
@@ -5368,7 +5370,7 @@ body::after {
 }
 
 .dark-mode .blog__icon {
-  background-color: #404048;
+  background-color: #29292E;
   border: none;
 }
 
@@ -6902,7 +6904,7 @@ body::after {
   }
 
   .dark-mode .menu-blog {
-    border-top: 1px solid #324c43;
+    border-top: 1px solid #324C43;
   }
 
   .menu-blog:not(:last-child) {
@@ -6947,7 +6949,7 @@ body::after {
 
 @media (min-width: 52.125em) and (any-hover: hover) {
   .menu-blog__link:hover {
-    color: #edbb40;
+    color: #edbb40 !important;
   }
 }
 
@@ -7696,6 +7698,45 @@ body::after {
     margin-bottom: 24px;
   }
 
+  .blog__more {
+    margin-top: 8px !important;
+  }
+
+  .column-blog__column {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 50%;
+            flex: 0 1 50%;
+  }
+
+  .range-bonus {
+    padding-top: 24px;
+    padding-bottom: 24px;
+    padding-left: 16px;
+    padding-right: 30px;
+  }
+
+  .income__text {
+    font-size: 0.75rem;
+  }
+
+  .request-details__title:not(:last-child) {
+    margin-bottom: 8px;
+  }
+
+  .request {
+    padding: 16px;
+  }
+
+  .request__create-date {
+    letter-spacing: -0.01em;
+  }
+
+  .request__status {
+    letter-spacing: -0.01em;
+  }
+}
+
+@media (max-width: 52.0625em) {
   .form-search-blog {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -7757,6 +7798,15 @@ body::after {
     text-align: center;
   }
 
+  .menu-blog__item:not(:last-child) {
+    padding-bottom: 25px;
+    border-bottom: 1px solid #EBE9E8;
+  }
+
+  .dark-mode .menu-blog__item:not(:last-child) {
+    border-bottom: 1px solid #324c43;
+  }
+
   .menu-blog__link {
     font-weight: 700;
     font-size: 22px;
@@ -7765,52 +7815,8 @@ body::after {
     line-height: 28px;
   }
 
-  .blog__more {
-    margin-top: 8px !important;
-  }
-
-  .column-blog__column {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 1 50%;
-            flex: 0 1 50%;
-  }
-
   .blog__icon {
     display: block;
-  }
-
-  .range-bonus {
-    padding-top: 24px;
-    padding-bottom: 24px;
-    padding-left: 16px;
-    padding-right: 30px;
-  }
-
-  .income__text {
-    font-size: 0.75rem;
-  }
-
-  .request-details__title:not(:last-child) {
-    margin-bottom: 8px;
-  }
-
-  .request {
-    padding: 16px;
-  }
-
-  .request__create-date {
-    letter-spacing: -0.01em;
-  }
-
-  .request__status {
-    letter-spacing: -0.01em;
-  }
-}
-
-@media (max-width: 52.1875em) {
-  .menu-blog__item:not(:last-child) {
-    border-bottom: 1px solid #324c43;
-    padding-bottom: 25px;
   }
 }
 
@@ -8125,5 +8131,3 @@ body::after {
             transform: scale(1.1);
   }
 }
-
-.webp .dark-mode .select_sel-security .select__value:after{ background: url(../img/ChevronDown-light.webp) center no-repeat !important; }
