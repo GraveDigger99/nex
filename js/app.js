@@ -1769,7 +1769,7 @@
                     }
                     let originalHeight = showMoreContent.offsetHeight;
                     parentHidden ? parentHidden.hidden = true : null;
-                    showMoreContent.style.height = `${hiddenHeight}px`;
+                    showMoreContent.style.height = `${hiddenHeight} + 20 + px`;
                     return originalHeight;
                 }
                 function showMoreActions(e) {
@@ -6042,6 +6042,16 @@
         let GetTheme = JSON.parse(localStorage.getItem("PageTheme"));
         console.log(GetTheme);
         if ("DARK" === GetTheme) document.body.classList = "dark-mode";
+        const script_showMore = document.querySelector(".lastest-operations__more");
+        const productsLenght = document.querySelectorAll(".item-lastest-operations").length;
+        let items = 2;
+        if (script_showMore) script_showMore.addEventListener("click", (() => {
+            items += 1;
+            const array = Array.from(document.querySelector(".lastest-operations__items").children);
+            const visItems = array.slice(0, items);
+            visItems.forEach((el => el.classList.add("is-visible")));
+            if (visItems.length === productsLenght) script_showMore.style.display = "none";
+        }));
         menuInit();
         spollers();
         showMore();
