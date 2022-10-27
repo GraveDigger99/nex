@@ -5983,7 +5983,6 @@
         document.querySelector(".menu__body");
         document.addEventListener("click", (function(e) {
             let targetElement = e.target;
-            let targetElementBody = targetElement.parentElement;
             document.querySelector(".security-form__input");
             if (targetElement.closest(".menu__icon")) document.documentElement.classList.remove("sel-number-open");
             if (targetElement.closest(".sign-in__icon")) {
@@ -5992,7 +5991,10 @@
                 document.documentElement.classList.remove("menu-open");
                 document.documentElement.classList.remove("sel-number-open");
             } else document.documentElement.classList.remove("sign-in-open");
-            if (targetElement.closest(".promotion__link")) targetElementBody.classList.toggle("_active");
+            if (targetElement.closest(".promotion__link")) {
+                let targetElementBody = targetElement.parentElement;
+                targetElementBody.classList.toggle("_active");
+            }
             if (targetElement.closest(".blog__icon")) {
                 document.documentElement.classList.toggle("lock");
                 document.documentElement.classList.toggle("blog-open");
@@ -6010,6 +6012,13 @@
             if (targetElement.closest(".notification-popup__icon")) notification.style.display = "none";
             const deleteIcon = document.querySelector(".form-search-blog__delete");
             if (targetElement.closest(".form-search-blog__input")) deleteIcon.style.display = "block";
+        }));
+        document.querySelectorAll(".item-notification");
+        const notificationClose = document.querySelectorAll(".item-notification__icon");
+        notificationClose.forEach((function(item, i, arr) {
+            item.addEventListener("click", (() => {
+                item.parentElement.classList.add("_remove");
+            }));
         }));
         const DarkBtn = document.querySelector(".switcher__label");
         DarkBtn.addEventListener("click", (function darkMode(e) {
