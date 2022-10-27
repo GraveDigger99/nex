@@ -6832,6 +6832,98 @@ body::after {
   margin-bottom: 20px;
 }
 
+.notification {
+  padding-bottom: 20px;
+}
+
+@supports (padding-top: clamp( 5rem , 0.1126126126rem  +  7.8828828829vw , 9.375rem )) {
+  .notification {
+    padding-top: clamp( 5rem , 0.1126126126rem  +  7.8828828829vw , 9.375rem );
+  }
+}
+
+@supports not (padding-top: clamp( 5rem , 0.1126126126rem  +  7.8828828829vw , 9.375rem )) {
+  .notification {
+    padding-top: calc(5rem + 4.375 * (100vw - 62rem) / 55.5);
+  }
+}
+
+.notification__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 26px;
+}
+
+.item-notification__inner {
+  background: #FFFFFF;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 16px;
+     -moz-column-gap: 16px;
+          column-gap: 16px;
+  padding: 16px;
+  max-width: 600px;
+  border-radius: 10px;
+  -webkit-column-gap: 20px;
+     -moz-column-gap: 20px;
+          column-gap: 20px;
+}
+
+.dark-mode .item-notification__inner {
+  background: #404048;
+}
+
+.item-notification__inner._remove {
+  display: none;
+}
+
+.item-notification__image {
+  padding-right: 16px;
+}
+
+.item-notification__text {
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 138%;
+  letter-spacing: -0.01em;
+  color: #ececec;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  color: #8E8E8E;
+}
+
+.dark-mode .item-notification__text {
+  color: #ECECEC;
+}
+
+.item-notification__text_red {
+  color: #F33053 !important;
+}
+
+.item-notification__text_green {
+  color: #09AA2C !important;
+}
+
+.item-notification__icon {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  cursor: pointer;
+}
+
 .swiper {
   overflow: hidden;
 }
@@ -7730,6 +7822,12 @@ body::after {
   .request__status {
     letter-spacing: -0.01em;
   }
+
+  .item-notification {
+    width: 100%;
+    min-width: 1px !important;
+    left: 0;
+  }
 }
 
 @media (max-width: 52.0625em) {
@@ -7935,6 +8033,10 @@ body::after {
 
 @media (max-width: 26.25em) {
   .notification-popup {
+    top: -55px;
+  }
+
+  .item-notification {
     top: -55px;
   }
 }
